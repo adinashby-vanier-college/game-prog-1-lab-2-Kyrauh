@@ -10,9 +10,17 @@ public class Lobster extends Actor
 {
 
     /**
-     * Act - do whatever the Lobster wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
+     * Act - do whatever the Crab wants to do. This method is called whenever the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
+        move(4);
+        if (Greenfoot.isKeyDown("a")) {
+            turn(3);
+        }
+        if (Greenfoot.isKeyDown("d")) {
+            turn(5);
+        }
+        setLocation(5, 8);
     }
 }
